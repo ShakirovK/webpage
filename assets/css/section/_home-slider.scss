@@ -1,0 +1,75 @@
+#section-home-slider{
+    .wrapper{
+        align-items: stretch;
+    }
+    .main-column{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-top: 40px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: $size-desktop * 0.25;
+    }
+    .slide-column{
+        margin-left: $size-desktop * 0.05;
+        flex-grow: 1;
+        flex-shrink: 0;
+        .navigation{
+            height: 30px;
+            margin-bottom: 10px;
+            text-align: right;
+            button{
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                font-size: 20px;
+                + button{
+                    margin-left: 20px;
+                }
+            }
+        }
+        .slide-items{
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 -10px;
+            height: 230px;
+            > *{
+                height: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: calc(50% - 20px);
+                picture{
+                    display: block;
+                    box-sizing: border-box;
+                    height: 100%;
+                    max-height: 320px;
+                    padding: 0;
+                    overflow: hidden;
+                    width: 100%;
+                    figure{
+                        height: 100%;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                        width: 100%;
+                        margin: 0;
+                        display: block;
+                        padding: 56.25% 0 0 0;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

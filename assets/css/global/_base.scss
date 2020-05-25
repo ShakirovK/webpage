@@ -14,3 +14,9 @@ body {
     background: #000;
     min-height: 100%;
 }
+
+.wrapper{
+    overflow: hidden;
+    margin: 0 auto;
+    width: $size-desktop;
+}

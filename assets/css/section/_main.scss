@@ -2,7 +2,7 @@
     background-image: url(../images/section-main.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     box-sizing: border-box;
     align-items: center;
     display: flex;
@@ -20,7 +20,7 @@
     }
     &::before{
         content: "";
-        background: rgba(0, 0, 0, .4);
+        background: rgba(0, 0, 0, .2);
         left: 0;
         right: 0;
         top: 0;
