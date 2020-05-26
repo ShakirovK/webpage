@@ -6,22 +6,23 @@
     <title>Моя страница</title>
     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="node_modules/basiclightbox/dist/basicLightbox.min.css">
 </head>
 <body>
     <nav id="section-top">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Photoapp</a></li>
+            <li><a href="#section-top">Home</a></li>
+            <li><a href="#photo-app">Photoapp</a></li>
             <li class="logotype"><a href="/"><img src="assets/images/logotype.png" alt="Логотип"></a></li>
-            <li><a href="/">Design</a></li>
-            <li><a href="/">Download</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#section-download">Download</a></li>
         </ul>
     </nav>
     <section id="section-main">
         <div class="center">
             <h1>Your life, a photo</h1>
             <h2>print your life in a simple photo</h2>
-            <a class="el-button__green" href="#">Get started</a>
+            <a class="el-button__green" href="#section-subscribe">Get started</a>
         </div>
         <nav class="social">
             <ul>
@@ -37,7 +38,7 @@
             </ul>
         </nav>
     </section>
-    <div class="line-block__gray">
+    <div class="line-block__gray" id="photo-app">
         <div class="wrapper" style="background-image: url('assets/images/turtle.png'); background-position: right bottom;">
             <div class="content">
                 <h3>Rappresent your life with a simple photo</h3>
@@ -45,11 +46,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam fuga eos vitae, itaque fugit blanditiis maiores repellat neque vel nisi ducimus dolor amet quasi iusto assumenda eligendi distinctio voluptate autem.</p>
                     <p>Illo culpa officia quia odit asperiores aspernatur voluptates, modi distinctio nisi temporibus nostrum facilis vitae ratione quibusdam recusandae adipisci suscipit optio ea incidunt tempora, delectus, blanditiis dolores earum expedita? Itaque!</p>
                 </div>
-                <a class="el-button__green" href="#">Get started</a>
+                <a class="el-button__green" href="#section-subscribe">Get started</a>
             </div>
         </div>
     </div>
-    <div class="line-block">
+    <div class="line-block" id="design">
         <div class="wrapper pos-right" style="background-image: url('assets/images/fish.png'); background-position: left center;">
         <div class="content">
             <h3>Design</h3>
@@ -57,7 +58,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam fuga eos vitae, itaque fugit blanditiis maiores repellat neque vel nisi ducimus dolor amet quasi iusto assumenda eligendi distinctio voluptate autem.</p>
                     <p>Illo culpa officia quia odit asperiores aspernatur voluptates, modi distinctio nisi temporibus nostrum facilis vitae ratione quibusdam recusandae adipisci suscipit optio ea incidunt tempora, delectus, blanditiis dolores earum expedita? Itaque!</p>
                 </div>
-                <a class="el-button__green" href="#">Get started</a>
+                <a class="el-button__green" href="#section-subscribe">Get started</a>
             </div>
         </div>
     </div>
@@ -65,7 +66,7 @@
         <div class="wrapper">
             <div class="main-column">
                 <div class="image">
-                    <img src="/assets/images/logotype_black.png" alt="Логотип">
+                    <img src="assets/images/logotype_black.png" alt="Логотип">
                 </div>
                 <h3>Our Comunity</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -142,9 +143,9 @@
             <div class="left-column">
                 <nav>
                     <ul>
-                        <li><a href="">credits</a></li>
-                        <li><a href="">privacy</a></li>
-                        <li><a href="">our teams</a></li>
+                        <li><a href="#modal-credits" data-type="modal">credits</a></li>
+                        <li><a href="#modal-privacy" data-type="modal">privacy</a></li>
+                        <li><a href="#modal-our-teams" data-type="modal">our teams</a></li>
                     </ul>
                 </nav>
                 <div class="copyright">
@@ -158,5 +159,34 @@
             </div>
         </div>
     </footer>
+    <div style="display: none;">
+    <div class="block-modal" id="modal-credits">
+        <div class="block-modal-header">Credits</div>
+        <div class="block-modal-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam doloribus, iusto architecto quidem maiores maxime tempore. Iure nobis distinctio tempora. Nisi quasi accusamus facilis minus autem labore sapiente illo magni?
+
+        </div>
+    </div>
+    <div class="block-modal" id="modal-privacy">
+        <div class="block-modal-header">Privacy</div>
+        <div class="block-modal-body">
+            <ul>
+                <li>Один</li>
+                <li>Два</li>
+                <li>Три</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block-modal" id="modal-our-teams">
+        <div class="block-modal-header">Our teams</div>
+        <div class="block-modal-body">
+            Тоже текст
+        </div>
+    </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="node_modules/basiclightbox/dist/basicLightbox.min.js"></script>
 </body>
 </html>

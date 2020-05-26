@@ -135,6 +135,7 @@ body {
 }
 
 html {
+  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -283,6 +284,57 @@ body {
 
 .line-block__gray {
   background: #dfdfdf;
+}
+
+.block-modal {
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 800px;
+  width: calc(100% - 50px);
+}
+
+.block-modal-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+}
+
+.block-modal-header .title {
+  color: #16a085;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.block-modal-header button {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 0 auto;
+  padding: 0;
+  -webkit-transition: color 0.15s ease-in;
+  transition: color 0.15s ease-in;
+}
+
+.block-modal-header button:hover {
+  color: #16a085;
+}
+
+.block-modal-body {
+  font-weight: 300;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 15px;
 }
 
 #section-top {
