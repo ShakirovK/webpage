@@ -3,10 +3,10 @@
     .wrapper {
         align-items: center;
         background-repeat: no-repeat;
-        background-size: $size-desktop * 0.5 auto;
+        background-size: $size-desktop * 0.45 auto;
         display: flex;
         justify-content: flex-start;
-        padding: 90px 0;
+        padding: 40px 0;
         &.pos-right {
             justify-content: flex-end;
         }
@@ -18,19 +18,16 @@
         &.center{
             text-align: center;
         }
-        width: $size-desktop * 0.5;
+        width: $size-desktop * 0.45;
         h3 {
-            color: $green-clr;
+            color: $pink-clr;
             font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
         }
         .description {
-            font-weight: 300;
+            font-weight: 400;
             margin: 50px auto;
-            p {
-                margin: 0;
-            }
         }
     }
 }

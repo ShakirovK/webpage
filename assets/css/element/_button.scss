@@ -1,14 +1,19 @@
 .el-button{
     background: #efefef;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     display: inline-block;
     color: #333;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
+}
+.el-button__pink {
+    @extend .el-button;
+    background: $pink-clr;
+    color: #fff;
 }
 .el-button__green {
     @extend .el-button;

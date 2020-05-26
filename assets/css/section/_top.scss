@@ -1,29 +1,28 @@
 #section-top {
     box-sizing: border-box;
-    height: 141px;
-    padding: 40px 0;
+    height: 60px;
+    padding: 5px 0;
     position: relative;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     ul{
         @extend %liststyle;
         align-items: center;
         display: flex;
         justify-content: center;
         li{
-            margin: 0 35px;
+            margin: 0 15px;
             a{
-                color: #ccc;
+                color: #fff;
                 font-weight: 600;
                 text-decoration: none;
                 text-transform: uppercase;
                 transition: color .15s ease-in;
                 &:hover{
-                    color: #fff;
+                    color: $pink-clr;
                 }
-            }
-            &.logotype{
-                margin-left: 65px;
-                margin-right: 65px;
             }
         }
     }

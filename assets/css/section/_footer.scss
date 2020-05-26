@@ -1,7 +1,10 @@
 #section-footer{
-    background: #fff;
-    padding: 45px 0;
+    background: #1b1536;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 0;
     .wrapper{
+        padding-top: 45px;
         display: flex;
         justify-content: space-between;
     }
@@ -14,16 +17,6 @@
                     margin-left: 20px;
                     padding-left: 22px;
                     position: relative;
-                    &:before{
-                        position: absolute;
-                        height: 14px;
-                        content: "";
-                        left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        background: $green-clr;
-                        width: 2px;
-                    }
                     &:first-child{
                         &:before{
                             display: none;
@@ -32,23 +25,27 @@
                         padding-left: 0;
                     }
                     a{
-                        color: #333333;
+                        color: #fff;
                         font-size: 14px;
                         font-weight: bold;
                         text-decoration: none;
                         text-transform: uppercase;
                         transition: color .15s ease-in;
                         &:hover{
-                            color: $green-clr;
+                            color: $pink-clr;
                         }
                     }
                 }
             }
         }
-        .copyright{
-            margin-top: 5px;
-            font-size: 14px;
-            font-weight: 600;
-        }
+    }
+    .copyright{
+        padding-top: 45px;
+        text-align: center;
+        background: black;
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        padding-bottom: 45px;
     }
 }

@@ -1,0 +1,44 @@
+#section-symptoms{
+    padding: 40px 0;
+    .wrapper{
+        ul{
+            padding: 0;
+            list-style: none;
+            display: flex;
+            margin: auto 0;
+            li{
+                justify-content: space-between;
+                div{
+                    display: block;
+                    overflow: hidden;
+                }
+                h3{
+                    padding-top: 10px;
+                    color: #3e395f;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    background: $gray-clr;
+                    text-align: center;
+                    margin: 0;
+                }
+                p{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    padding-bottom: 15px;
+                    margin-top: 0;
+                    background: $gray-clr;
+                }
+            }
+        }
+        padding: 0;
+    }   
+    img{
+        transition: 1s;
+        display: block;
+        overflow: hidden;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
