@@ -656,19 +656,20 @@ body {
 }
 
 #section-footer .copyright {
-  padding-top: 45px;
+  padding: 25px;
   text-align: center;
   background: black;
-  margin-top: 5px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
-  padding-bottom: 45px;
 }
 
 #section-footer .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #section-footer .social ul li {
@@ -676,6 +677,10 @@ body {
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 0;
+}
+
+#section-footer .social ul li a {
+  color: #fff;
 }
 
 #section-footer .contacts ul li {
