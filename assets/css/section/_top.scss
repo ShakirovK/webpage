@@ -1,9 +1,16 @@
 #section-top {
+    height: 60px;
+    width: 100%;
+    z-index:3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper{
     box-sizing: border-box;
     height: 60px;
     padding: 5px 0;
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    z-index: 9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,5 +32,12 @@
                 }
             }
         }
+    }
+    }
+}
+.header{
+    .wrapper{
+        width: 100%;
+        background-color: #1D1F21;
     }
 }

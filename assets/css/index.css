@@ -1,4 +1,4 @@
-#section-top ul, #section-main .center ul, #section-footer .column nav ul, #section-footer .social ul, #section-footer .contacts ul {
+#section-top .wrapper ul, #section-main .center ul, #section-footer .column nav ul, #section-footer .social ul, #section-footer .contacts ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -340,12 +340,27 @@ body {
 }
 
 #section-top {
+  height: 60px;
+  width: 100%;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section-top .wrapper {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 60px;
   padding: 5px 0;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +372,7 @@ body {
           justify-content: center;
 }
 
-#section-top ul {
+#section-top .wrapper ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -369,11 +384,11 @@ body {
           justify-content: center;
 }
 
-#section-top ul li {
+#section-top .wrapper ul li {
   margin: 0 15px;
 }
 
-#section-top ul li a {
+#section-top .wrapper ul li a {
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -382,8 +397,13 @@ body {
   transition: color .15s ease-in;
 }
 
-#section-top ul li a:hover {
+#section-top .wrapper ul li a:hover {
   color: #e90480;
+}
+
+.header .wrapper {
+  width: 100%;
+  background-color: #1D1F21;
 }
 
 #section-main {
