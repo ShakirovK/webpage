@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/basiclightbox/dist/basicLightbox.min.css">
 </head>
 <body>
+
     <nav id="section-top">
         <ul>
             <li class="logotype"><a href="#"><img src="assets/images/logotype.png" alt=""></a></li>
@@ -75,64 +76,63 @@
             </ul>
             </div>
     </div>
-    <div id="section-subscribe">
-        <div class="wrapper">
-            <h3>Subscribe to us community</h3>
-            <form class="el-group">
-                <input type="email" required placeholder="your email">
-                <button tupe="submit">
-                    <i class="fas fa-check"></i>
-                </button>
-            </form>
-        </div>
-    </div>
     <footer id="section-footer">
         <div class="wrapper">
-            <div class="left-column">
-                <nav>
-                    <ul>
-                        <li><a href="#modal-credits" data-type="modal">credits</a></li>
-                        <li><a href="#modal-privacy" data-type="modal">privacy</a></li>
-                        <li><a href="#modal-our-teams" data-type="modal">our teams</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="right-column">
+            <div class="column">
                 <div class="image">
                     <img src="assets/images/logotype.png" alt="Логотип">
                 </div>
+                <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge .</p>
+                <div class="social">
+                    <ul>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-twitter-square"></i></li>
+                        <li><i class="fab fa-reddit"></i></li>
+                        <li><i class="fab fa-youtube"></i>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title">Usefull links</div>
+                <nav>
+                    <ul>
+                        <li><a href="">Symptoms</a></li>
+                        <li><a href="">Prevention</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <div class="title">Contact us</div>
+                <div class="contacts">
+                    <ul>
+                        <li><i class="fas fa-map-marker"></i>Address: -512/fonia,canada</li>
+                        <li><i class="fas fa-phone"></i>+0448973876</li>
+                        <li><i class="far fa-envelope-open"></i>support@corano.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="title">Usefull links</div>
+                <form class="el-group">
+                    <input type="email" required placeholder="your email">
+                    <button tupe="submit">
+                        <i class="fas fa-check"></i>
+                    </button>
+                </form>
             </div>
         </div>
         <div class="copyright">Copyright &copy; 2020 Virus. All Rights Reserved</div>
     </footer>
-    <div style="display: none;">
-    <div class="block-modal" id="modal-credits">
-        <div class="block-modal-header">Credits</div>
-        <div class="block-modal-body">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam doloribus, iusto architecto quidem maiores maxime tempore. Iure nobis distinctio tempora. Nisi quasi accusamus facilis minus autem labore sapiente illo magni?
-
-        </div>
-    </div>
-    <div class="block-modal" id="modal-privacy">
-        <div class="block-modal-header">Privacy</div>
-        <div class="block-modal-body">
-            <ul>
-                <li>Один</li>
-                <li>Два</li>
-                <li>Три</li>
-            </ul>
-        </div>
-    </div>
-    <div class="block-modal" id="modal-our-teams">
-        <div class="block-modal-header">Our teams</div>
-        <div class="block-modal-body">
-            Тоже текст
-        </div>
-    </div>
     </div>
 
-
-    <script src="js/main.js"></script>
-    <script src="node_modules/basiclightbox/dist/basicLightbox.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
 </body>
 </html>

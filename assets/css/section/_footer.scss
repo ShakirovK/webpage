@@ -6,16 +6,17 @@
     .wrapper{
         padding-top: 45px;
         display: flex;
+        position: relative;
         justify-content: space-between;
     }
-    .left-column{
+    .column{
+        box-sizing: border-box;
+        width: 230px;
         nav{
             ul{
                 @extend %liststyle;
-                display: flex;
                 li{
-                    margin-left: 20px;
-                    padding-left: 22px;
+                    padding-bottom: 6px;
                     position: relative;
                     &:first-child{
                         &:before{
@@ -27,7 +28,7 @@
                     a{
                         color: #fff;
                         font-size: 14px;
-                        font-weight: bold;
+                        font-weight: 400;
                         text-decoration: none;
                         text-transform: uppercase;
                         transition: color .15s ease-in;
@@ -37,6 +38,10 @@
                     }
                 }
             }
+        }
+        .title{
+            font-size: 14px;
+            font-weight: 600;
         }
     }
     .copyright{
@@ -48,4 +53,26 @@
         font-weight: 600;
         padding-bottom: 45px;
     }
+    .social{
+        ul{
+            @extend %liststyle;
+            display: flex;
+            li{
+                padding-top: 0;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                padding-left: 0;
+            }
+        }
+    }
+    .contacts{
+        ul{
+            @extend %liststyle;
+            li{
+                padding-bottom: 6px;
+            }
+        }
+    }
+
+    
 }
