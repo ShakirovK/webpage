@@ -355,9 +355,12 @@ body {
 }
 
 #section-top .wrapper {
+  -webkit-transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 60px;
+  width: 100%;
   padding: 5px 0;
   position: fixed;
   z-index: 9;
